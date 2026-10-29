@@ -323,6 +323,22 @@ html[data-theme="dark"] .btn-primary:hover { color: #062124; }
   .rating-input button .rating-star { width: 24px; height: 24px; }
 }
 
+/* ── Demo sheet scanner test ── */
+.demo-sheet-band { padding: 0 0 56px; }
+.demo-sheet-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 22px 26px; border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--surface), var(--surface-2));
+  border: 1px solid var(--border); box-shadow: var(--shadow-soft);
+}
+.demo-sheet-card h3 { font-size: clamp(1.15rem, 2vw, 1.45rem); margin: 6px 0; }
+.demo-sheet-card p { margin: 0; color: var(--text-dim); font-size: 13px; max-width: 640px; }
+.demo-sheet-card .btn { flex: none; }
+@media (max-width: 700px) {
+  .demo-sheet-card { flex-direction: column; align-items: flex-start; }
+  .demo-sheet-card .btn { width: 100%; justify-content: center; }
+}
+
 /* ── Sections ── */
 .section { padding: 96px 0; }
 .section-alt { background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
