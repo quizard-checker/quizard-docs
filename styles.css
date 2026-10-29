@@ -334,9 +334,23 @@ html[data-theme="dark"] .btn-primary:hover { color: #062124; }
 .demo-sheet-card h3 { font-size: clamp(1.15rem, 2vw, 1.45rem); margin: 6px 0; }
 .demo-sheet-card p { margin: 0; color: var(--text-dim); font-size: 13px; max-width: 640px; }
 .demo-sheet-card .btn { flex: none; }
+.demo-sheet-links {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+  width: 100%; margin-top: 14px;
+}
+.demo-sheet-links a {
+  display: flex; flex-direction: column; gap: 3px; min-width: 0;
+  padding: 12px 14px; border-radius: 12px;
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--text); text-decoration: none; font-size: 12.5px; line-height: 1.35;
+  transition: border-color .15s ease, background-color .15s ease;
+}
+.demo-sheet-links a:hover, .demo-sheet-links a:focus-visible { border-color: var(--accent); background: var(--accent-soft); }
+.demo-sheet-links a b { font-size: 12.5px; }
+.demo-sheet-links a span { color: var(--text-dim); font-size: 11.5px; }
 @media (max-width: 700px) {
   .demo-sheet-card { flex-direction: column; align-items: flex-start; }
-  .demo-sheet-card .btn { width: 100%; justify-content: center; }
+  .demo-sheet-links { grid-template-columns: 1fr; }
 }
 
 /* ── Sections ── */
