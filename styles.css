@@ -350,6 +350,8 @@ html[data-theme="dark"] .btn-primary:hover { color: #062124; }
 .demo-sheet-links a:hover, .demo-sheet-links a:focus-visible { border-color: var(--accent); background: var(--accent-soft); }
 .demo-sheet-links a b { font-size: 12.5px; }
 .demo-sheet-links a span { color: var(--text-dim); font-size: 11.5px; }
+.demo-sheet-links a.demo-sheet-pdf { grid-column: 1 / -1; }
+.demo-sheet-links a.demo-sheet-pdf b { color: var(--accent); }
 @media (max-width: 700px) {
   .demo-sheet-card { flex-direction: column; align-items: flex-start; }
   .demo-sheet-links { grid-template-columns: 1fr; }
